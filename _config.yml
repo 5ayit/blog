@@ -1,0 +1,16 @@
+# Setup
+title:               'Blog · 5ay.it'
+tagline:             'Blog of 5ay.it'
+description:         'Blog of 5ay.it'
+url:                 https://blog.5ay.it
+baseurl:             ''
+paginate:            4
+permalink:           pretty
+
+# Gems
+plugins:
+  - jekyll-paginate
+
+# Custom vars
+version:             1.1.0
+google_analytics_id: #UA-XXXX-Y
