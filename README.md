@@ -7,5 +7,3 @@
 # Blog of 5ay.it
 
 This repository is for the blog of 5ay.it on GitHub Pages, and you can access it through https://blog.5ay.it.
-
-Test,
