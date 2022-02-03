@@ -3,29 +3,29 @@ layout: default
 title: Home
 ---
 
-<div class="mb-5">
-  {% for post in paginator.posts %}
+{% for post in paginator.posts %}
+  <div class="mb-5">
     <h1  class="mb-3 pb-3 h2 fw-bold border-bottom">
       <a class="text-decoration-none              " href="{{ post.url | absolute_url }}">{{ page.title                 }}</a>
     </h1>
     <div class="mb-4           text-end text-muted">                                     {{ post.date | date_to_string }}</div>
                                                                                          {{ post.content               }}
-  {% endfor %}
-</div>
+  </div>
+{% endfor %}
 
-<div       class="btn-group w-100">
+<div      class="btn-group w-100">
   {% if paginator.next_page %}
-    <a     class="btn btn-outline-secondary" href="{{ paginator.next_page_path | absolute_url }}">Older</a>
+    <a    class="btn btn-lg btn-outline-secondary" href="{{ paginator.next_page_path     | absolute_url }}">Older</a>
   {% else %}
-    <span  class="btn btn-outline-secondary">Older</span>
+    <span class="btn btn-lg btn-outline-secondary">Older</span>
   {% endif %}
   {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
-      <a  class="btn btn-outline-secondary" href="{{ '/' | absolute_url }}">Newer</a>
+      <a  class="btn btn-lg btn-outline-secondary" href="{{ '/'                          | absolute_url }}">Newer</a>
     {% else %}
-      <a  class="btn btn-outline-secondary" href="{{ paginator.previous_page_path | absolute_url }}">Newer</a>
+      <a  class="btn btn-lg btn-outline-secondary" href="{{ paginator.previous_page_path | absolute_url }}">Newer</a>
     {% endif %}
   {% else %}
-    <span class="btn btn-outline-secondary">Newer</span>
+    <span class="btn btn-lg btn-outline-secondary">Newer</span>
   {% endif %}
 </div>
