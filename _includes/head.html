@@ -2,7 +2,7 @@
   <meta charset="utf-8">
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
 
-  <title>{% if page.title == "Home" %} {{ site.title }} · {{ site.tagline }} {% else %} {{ page.title }} · {{ site.title   }} {% endif %}</title>
+  <title>{% if page.title == 'Home' %} {{ site.title }} · {{ site.tagline }} {% else %} {{ page.title }} · {{ site.title }} {% endif %}</title>
   <link href="{{ '/public/icon.svg' | absolute_url }}" type="image/svg+xml" rel="icon">
 
   {% if page.url and site.baseurl %}
@@ -12,7 +12,7 @@
   <meta name="description" content="">
   <meta name="viewport"    content="width=device-width, initial-scale=1, user-scalable=no">
 
-  <meta property="og:title"        content="">
+  <meta property="og:title"        content="{% if page.title == 'Home' %} {{ site.title }} · {{ site.tagline }} {% else %} {{ page.title }} · {{ site.title }} {% endif %}">
   <meta property="og:description"  content="">
   <meta property="og:type"         content="website">
   <meta property="og:url"          content="https://blog.5ay.it">
@@ -21,7 +21,7 @@
   <meta property="og:image:height" content="">
   <meta property="fb:app_id"       content="">
 
-  <meta name="apple-mobile-web-app-title"            content="">
+  <meta name="apple-mobile-web-app-title"            content="{% if page.title == 'Home' %} {{ site.title }} · {{ site.tagline }} {% else %} {{ page.title }} · {{ site.title }} {% endif %}">
   <meta name="apple-mobile-web-app-capable"          content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="#366">
   <meta name="theme-color"                           content="#366">
