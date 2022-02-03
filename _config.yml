@@ -14,4 +14,3 @@ tagline_url: 'https://5ay.it'
 # Gems
 plugins    :
   - jekyll-paginate
-
