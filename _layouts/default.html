@@ -8,13 +8,20 @@
     {% include sidebar.html %}
 
     <!-- Wrap is the content to shift when toggling the sidebar. We wrap the content to avoid any CSS collisions with our real content. -->
-    <div class="wrap">
-      <div class="masthead">
-        <div class="container">
-          <h3 class="masthead-title">
-            <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
-            <small>{{ site.tagline }}</small>
+    <div           class="wrap                ">
+      <div         class="masthead            ">
+        <div       class="container           ">
+
+          <a class="navbar-brand fw-bold _jc_main_fill _jc_main_text _jc_void_fill_over _jc_void_text_over" href="/">
+            <img class="d-inline-block" src="{{ '/public/icon.svg' | absolute_url }}" style="width: 24px; height: 24px;">
+            {{ site.title }}
+          </a>
+
+          <h3      class="masthead-title    h5">
+            <a     class="text-decoration-none" href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+            <small class="small">{{ site.tagline }}</small>
           </h3>
+
         </div>
       </div>
 
