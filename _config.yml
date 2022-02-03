@@ -1,4 +1,4 @@
-# Setup
+# Essential Config
 title      : 'Blog'
 tagline    : '5ay.it'
 description: 'Blog of 5ay.it'
@@ -7,9 +7,11 @@ baseurl    : ''
 paginate   :  4
 permalink  : 'pretty'
 
+# Optional Config
+version    : 1.0.1
+tagline_url: 'https://5ay.it'
+
 # Gems
 plugins    :
   - jekyll-paginate
 
-# Custom vars
-version    : 1.1.0
