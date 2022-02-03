@@ -17,7 +17,7 @@
     </div>
 
     <!-- BODY -->
-    <div   class="p-4    d-flex" style="margin-top:  96px;">
+    <div   class="p-4    d-flex" style="margin-top:  96px;" id="_jc_body">
       <div class="w-100 mx-auto" style="max-width : 640px;"> {{ content }} </div>
     </div>
 
@@ -30,5 +30,11 @@
       <div    class="offcanvas-body   p-4                                 "> {% include sidebar.html %} </div>
     </div>
 
+    <script> $( () => {
+      $( '#_jc_body table'    ).addClass( 'table'        )
+      $( '#_jc_body pre code' ).addClass( 'p-3 bg-light' )
+    } ) </script>
+
   </body>
+
 </html>
