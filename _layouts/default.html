@@ -19,18 +19,16 @@
 
     <!-- BODY -->
     <div   class="mt-5 p-4 d-flex">
-      <div class="mx-auto  w-100 " style="max-width: 640px;">{{ content }}</div>
+      <div class="mx-auto  w-100 " style="max-width: 640px;"> {{ content }} </div>
     </div>
 
     <!-- LEFT -->
-    <div        class="offcanvas offcanvas-start _jc_void_text _jc_main_back" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-      <div      class="offcanvas-header">
-        <h5     class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <div      class="offcanvas offcanvas-start _jc_void_text _jc_main_back" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div    class="offcanvas-header">
+        <h5   class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+        <span class="btn-close text-reset" role="button" data-bs-dismiss="offcanvas"></span>
       </div>
-      <div class="offcanvas-body">
-        {% include sidebar.html %}
-      </div>
+      <div    class="offcanvas-body"> {% include sidebar.html %} </div>
     </div>
 
     <!-- {% include sidebar.html %} -->
