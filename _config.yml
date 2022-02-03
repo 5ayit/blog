@@ -1,7 +1,7 @@
 # Essential Config
 title      : 'Blog'
 tagline    : '5ay.it'
-description: 'Blog · 5ay.it'
+description: '5ay.it · Blog'
 url        : 'https://blog.5ay.it'
 baseurl    : ''
 paginate   :  4
