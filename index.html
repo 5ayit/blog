@@ -5,11 +5,11 @@ title: Home
 
 {% for post in paginator.posts %}
   <div   class="mb-5                                              ">
-    <h1  class="mb-3 pb-3 h2 fw-bold border-bottom                ">
+    <h1  class="mb-3 pb-3 fw-bold border-bottom                   ">
       <a class="text-decoration-none _jc_info_text _jc_help_text_h" href="{{ post.url | absolute_url }}">{{ post.title                 }}</a>
     </h1>
     <div class="mb-4 text-end text-muted                          ">                                     {{ post.date | date_to_string }}</div>
-                                                                                                        {{ post.content               }}
+                                                                                                         {{ post.content               }}
   </div>
 {% endfor %}
 
@@ -17,7 +17,7 @@ title: Home
   {% if paginator.next_page %}
     <a    class="btn btn-lg btn-outline-light _jc_main_text _jc_void_text_h _jc_main_line _jc_main_back_h" href="{{ paginator.next_page_path     | absolute_url }}">Older</a>
   {% else %}
-    <span class="btn btn-lg btn-outline-light                                                    disabled">Older</span>
+    <span class="btn btn-lg btn-outline-secondary                                                disabled">Older</span>
   {% endif %}
   {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
@@ -26,6 +26,6 @@ title: Home
       <a  class="btn btn-lg btn-outline-light _jc_main_text _jc_void_text_h _jc_main_line _jc_main_back_h" href="{{ paginator.previous_page_path | absolute_url }}">Newer</a>
     {% endif %}
   {% else %}
-    <span class="btn btn-lg btn-outline-light                                                    disabled">Newer</span>
+    <span class="btn btn-lg btn-outline-secondary                                                disabled">Newer</span>
   {% endif %}
 </div>
