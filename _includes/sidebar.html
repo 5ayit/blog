@@ -1,19 +1,27 @@
-<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular styles, `#sidebar-checkbox` for behavior. -->
 
-<!-- <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox"> -->
 
-<!-- Toggleable sidebar -->
-<div   class="sidebar" id="sidebar">
-  <div class="sidebar-item">
-    <p class="">{{ site.description }}</p>
-  </div>
+<div>
+  <h6 class="_jc_main_text  fw-bold">5ay.it</h6>
+  <a  class="_jc_void_text _jc_info_text_h text-decoration-none py-2 d-block" target="_blank" href="https://5ay.it"            >Home   </a>
+  <a  class="_jc_void_text _jc_info_text_h text-decoration-none py-2 d-block" target="_blank" href="https://5ay.it/saas"       >SaaS   </a>
+  <a  class="_jc_void_text _jc_info_text_h text-decoration-none py-2 d-block" target="_blank" href="https://docs.5ay.it/plugin">Plugin </a>
+  <a  class="_jc_void_text _jc_info_text_h text-decoration-none py-2 d-block" target="_blank" href="https://docs.5ay.it"       >Docs   </a>
+  <a  class="_jc_void_text _jc_info_text_h text-decoration-none py-2 d-block"                 href="https://blog.5ay.it"       >Blog   </a>
+  <a  class="_jc_void_text _jc_info_text_h text-decoration-none py-2 d-block" target="_blank" href="https://5ay.it/my/help"    >Contact</a>
+</div>
 
+<small class="d-block py-1 mt-4">{{ site.description }} {{ site.version }}                       </small>
+<small class="d-block py-1     ">&copy; {{ site.time | date: '%Y' }} 5ay.it, all rights reserved.</small>
+
+
+
+
+<!--
   <nav class="sidebar-nav">
     <a class="sidebar-nav-item{% if page.title == 'Home' %} active{% endif %}" href="{{ '/' | absolute_url }}">Home</a>
 
     {% comment %}
-      The code below dynamically generates a sidebar nav of pages with
-      `layout: page` in the front-matter. See readme for usage.
+      The code below dynamically generates a sidebar nav of pages with `layout: page` in the front-matter. See readme for usage.
     {% endcomment %}
 
     {% assign pages_list = site.pages | sort:"url" %}
@@ -23,14 +31,14 @@
           <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url | absolute_url }}">{{ node.title }}</a>
         {% endif %}
       {% endif %}
-    {% endfor %}
+    {% endfor %} -->
 
     <!-- <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a> -->
     <!-- <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a> -->
-    <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
+    <!-- <span class="sidebar-nav-item">Currently </span>
   </nav>
 
   <div class="-sidebar-item">
     <p class="mb-0 small   ">&copy; {{ site.time | date: '%Y' }} 5ay.it, all rights reserved.</p>
   </div>
-</div>
+</div> -->
