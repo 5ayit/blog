@@ -5,7 +5,7 @@ title: Home
 
 {% for post in paginator.posts %}
   <div   class="mb-5                                              ">
-    <h1  class="mb-3 pb-3 fw-bold border-bottom                   ">
+    <h1  class="mb-3 pb-3 lh-base fw-bold border-bottom           ">
       <a class="text-decoration-none _jc_info_text _jc_help_text_h" href="{{ post.url | absolute_url }}">{{ post.title                 }}</a>
     </h1>
     <div class="mb-4 text-end text-muted                          ">                                     {{ post.date | date_to_string }}</div>
