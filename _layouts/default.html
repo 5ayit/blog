@@ -33,8 +33,10 @@
       <div class="container content">{{ content }}</div>
     </div>
 
-    <!-- <label for="sidebar-checkbox" class="sidebar-toggle"></label> -->
-    <img class="d-flex" style="width: 24px; height: 24px;" src="{{ '/public/icon.svg' | absolute_url }}" for="sidebar-checkbox">
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    <style> .sidebar-toggle::before { background: url( {{ '/public/icon.svg' | absolute_url }} ) } </style>
+
+    <!-- <img class="d-flex" style="width: 24px; height: 24px;" src="{{ '/public/icon.svg' | absolute_url }}" for="sidebar-checkbox"> -->
 
     <script src='{{ site.baseurl }}/public/js/script.js'></script>
   </body>
